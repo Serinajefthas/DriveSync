@@ -1,4 +1,4 @@
-# DiveSync
+# DiveSync: Car Rental Management System
 
 ## Table of Contents
 
