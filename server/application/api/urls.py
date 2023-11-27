@@ -1,9 +1,8 @@
 from django.urls import path
-from .views import main
+from .views import UserView
 
 #extensions after api/, redirected from urls.py 
 #in applications folder, line: 'path('api/', include('api.urls'))'
 urlpatterns = [
-    path('', main),
-    path('home', main),
+    path('home', UserView.as_view()),
 ]
