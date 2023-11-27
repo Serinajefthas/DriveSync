@@ -11,7 +11,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 
