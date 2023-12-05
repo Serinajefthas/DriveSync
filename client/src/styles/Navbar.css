@@ -1,0 +1,12 @@
+nav {
+  opacity: 0.9;
+  position: relative;
+  z-index: 999999;
+}
+
+nav .nav-link {
+  transition: var(--transition);
+}
+nav .nav-link:hover {
+  color: white;
+}

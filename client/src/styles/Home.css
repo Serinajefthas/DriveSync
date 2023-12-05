@@ -1,0 +1,39 @@
+.home {
+  position: relative;
+  background-image: url("../assets/images/home.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.home .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.home .container {
+  position: relative;
+  z-index: 9999;
+}
+.home form {
+  padding: 20px;
+}
+.home .form-group {
+  margin-bottom: 20px;
+}
+.home div:nth-child(2) {
+  align-self: center;
+  color: white;
+}
+
+.home label {
+  color: white;
+}
