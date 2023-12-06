@@ -4,11 +4,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
+  margin-top: 56px;
 }
 .home .overlay {
   background-color: rgba(0, 0, 0, 0.5);
@@ -36,4 +37,20 @@
 
 .home label {
   color: white;
+}
+
+.home .row {
+  margin-top: 56px;
+}
+
+.home .row .form-control:focus {
+  border: none !important;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .home .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

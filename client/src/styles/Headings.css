@@ -1,0 +1,18 @@
+.heading-parent {
+  text-align: center;
+}
+.heading-parent .sub-heading {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+  color: #1089ff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading-parent .heading {
+  font-size: 40px;
+  font-weight: 600;
+}

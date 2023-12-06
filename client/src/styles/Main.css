@@ -5,6 +5,8 @@
   --bg-color: white;
   --color: #ffa500;
   --transition: 0.2s;
+  --section-padding: 50px 0;
+  --section-margin: 50px 0;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -26,7 +28,6 @@ body {
   background-color: var(--bg-color);
   position: relative;
   z-index: -1000;
-  height: 5000px;
 }
 ul {
   list-style: none;
