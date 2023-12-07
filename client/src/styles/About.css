@@ -2,6 +2,7 @@
   padding: var(--section-padding);
   height: 100vh;
   position: relative;
+  margin: 56px 0;
 }
 
 .about::before {
