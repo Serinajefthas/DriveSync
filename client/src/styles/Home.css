@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,7 @@
 
 .home .row {
   margin-top: 56px;
+  justify-content: center;
 }
 
 .home .row .form-control:focus {

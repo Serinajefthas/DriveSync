@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="bg-dark text-white p-5">
@@ -14,19 +16,19 @@ function Footer() {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/#" className="text-white">
+                <Link to="/" className="text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#" className="text-white">
+                <Link to="/#" className="text-white">
                   Cars
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#" className="text-white">
+                <Link to="/about" className="text-white">
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

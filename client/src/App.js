@@ -6,6 +6,7 @@ import "./styles/Main.css";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import { Routes, Route } from "react-router-dom";
+import Cars from "./pages/Cars";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/cars" element={<Cars />} />
+
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

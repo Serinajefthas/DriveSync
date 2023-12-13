@@ -1,57 +1,72 @@
 import "../styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            DriveSync
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Cars
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+    <nav className="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          DriveSync
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeclassname="active"
+                exact={"true"}
+                to="/"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeclassname="active"
+                to="/about"
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeclassname="active"
+                to="/services"
+              >
+                Services
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" activeclassname="active" to="/cars">
+                Cars
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                activeclassname="active"
+                to="/contact"
+              >
+                Contact
+              </NavLink>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
 

@@ -44,7 +44,10 @@ function Contact() {
             </div>
           </div>
           <div className="form col-md-8 block-9 mb-md-5">
-            <form className="bg-light p-5 contact-form">
+            <form
+              onSubmit={(e) => e.preventDefault()}
+              className="bg-light p-5 contact-form"
+            >
               <div className="form-group mb-3">
                 <input
                   type="text"
