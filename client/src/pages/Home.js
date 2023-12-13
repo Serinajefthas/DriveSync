@@ -1,4 +1,4 @@
-import DateTimePicker from "../components/DateTimePicker";
+// import DateTimePicker from "../components/DateTimePicker";
 import "../styles/Home.css";
 import About from "./About";
 import Services from "./Services";
@@ -11,7 +11,7 @@ function Home() {
         <div className="overlay"></div>
         <div className="container">
           <div className="row">
-            <DateTimePicker />
+            {/* <DateTimePicker /> */}
             {/* Slogan and Icons */}
             <div className="col-md-6 text-center">
               <h2>Choose Your Pickup Location</h2>
