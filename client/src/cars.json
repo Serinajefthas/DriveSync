@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "image": "toyotaCamry.png",
+    "name": "Toyota Camry",
+    "model": "2023",
+    "rent_per_day": 50,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 3
+    }
+  },
+  {
+    "id": 2,
+    "image": "toyotaCamry.png",
+    "name": "Honda Civic",
+    "model": "2023",
+    "rent_per_day": 40,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "manual",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 3,
+    "image": "toyotaCamry.png",
+    "name": "Tesla Model 3",
+    "model": "2023",
+    "rent_per_day": 80,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 4,
+    "image": "toyotaCamry.png",
+    "name": "Ford Mustang",
+    "model": "2023",
+    "rent_per_day": 70,
+    "specifications": {
+      "number_of_doors": 2,
+      "number_of_people": 4,
+      "transmission": "manual",
+      "number_of_bags": 1
+    }
+  },
+  {
+    "id": 5,
+    "image": "toyotaCamry.png",
+    "name": "Chevrolet Malibu",
+    "model": "2023",
+    "rent_per_day": 55,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 6,
+    "image": "toyotaCamry.png",
+    "name": "Nissan Altima",
+    "model": "2023",
+    "rent_per_day": 60,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 3
+    }
+  },
+  {
+    "id": 7,
+    "image": "toyotaCamry.png",
+    "name": "BMW 3 Series",
+    "model": "2023",
+    "rent_per_day": 90,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 8,
+    "image": "toyotaCamry.png",
+    "name": "Audi A4",
+    "model": "2023",
+    "rent_per_day": 85,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 9,
+    "image": "toyotaCamry.png",
+    "name": "Mercedes-Benz C-Class",
+    "model": "2023",
+    "rent_per_day": 95,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 10,
+    "image": "toyotaCamry.png",
+    "name": "Volkswagen Passat",
+    "model": "2023",
+    "rent_per_day": 45,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "manual",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 11,
+    "image": "toyotaCamry.png",
+    "name": "Hyundai Sonata",
+    "model": "2023",
+    "rent_per_day": 50,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 12,
+    "image": "toyotaCamry.png",
+    "name": "Kia Optima",
+    "model": "2023",
+    "rent_per_day": 48,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 13,
+    "image": "toyotaCamry.png",
+    "name": "Subaru Impreza",
+    "model": "2023",
+    "rent_per_day": 42,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "manual",
+      "number_of_bags": 1
+    }
+  },
+  {
+    "id": 14,
+    "image": "toyotaCamry.png",
+    "name": "Mazda3",
+    "model": "2023",
+    "rent_per_day": 45,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "manual",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 15,
+    "image": "toyotaCamry.png",
+    "name": "Lexus ES",
+    "model": "2023",
+    "rent_per_day": 100,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 3
+    }
+  },
+  {
+    "id": 16,
+    "image": "toyotaCamry.png",
+    "name": "Infiniti Q50",
+    "model": "2023",
+    "rent_per_day": 95,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 17,
+    "image": "toyotaCamry.png",
+    "name": "Acura TLX",
+    "model": "2023",
+    "rent_per_day": 80,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 18,
+    "image": "toyotaCamry.png",
+    "name": "Cadillac CT4",
+    "model": "2023",
+    "rent_per_day": 110,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 5,
+      "transmission": "automatic",
+      "number_of_bags": 3
+    }
+  },
+  {
+    "id": 19,
+    "image": "toyotaCamry.png",
+    "name": "Porsche Panamera",
+    "model": "2023",
+    "rent_per_day": 150,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 4,
+      "transmission": "automatic",
+      "number_of_bags": 2
+    }
+  },
+  {
+    "id": 20,
+    "image": "toyotaCamry.png",
+    "name": "Chevrolet Tahoe",
+    "model": "2023",
+    "rent_per_day": 120,
+    "specifications": {
+      "number_of_doors": 4,
+      "number_of_people": 8,
+      "transmission": "automatic",
+      "number_of_bags": 5
+    }
+  }
+]
