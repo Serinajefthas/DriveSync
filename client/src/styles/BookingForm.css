@@ -1,0 +1,25 @@
+.booking-form {
+  margin: 112px 0px;
+}
+.booking-form form {
+  padding: 15px;
+  background-color: #eee;
+}
+.booking-form form .driver .client-info {
+  display: flex;
+  flex-direction: column;
+}
+.booking-form form .driver .client-info label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+.booking-form form .driver .client-info label input {
+  outline: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+.booking-form .client-info {
+}

@@ -1,8 +1,10 @@
 import "../styles/Car.css";
 import toyota from "../assets/images/toyotaCamry.png";
+import { Link } from "react-router-dom";
 
 function Car(props) {
   const {
+    id,
     image,
     name,
     model,
@@ -55,7 +57,9 @@ function Car(props) {
           <p className="price">
             <strong>${rent_per_day}</strong> / day
           </p>
-          <button className="btn btn-primary">Book Now</button>
+          <Link to={"bookingform/" + id} className="btn btn-primary">
+            Book Now
+          </Link>
         </div>
       </div>
     </div>
