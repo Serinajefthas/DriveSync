@@ -32,6 +32,11 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" activeclassname="active" to="/cars">
+                Cars
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink
                 className="nav-link"
                 activeclassname="active"
@@ -49,11 +54,7 @@ function Navbar() {
                 Services
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" activeclassname="active" to="/cars">
-                Cars
-              </NavLink>
-            </li>
+
             <li className="nav-item">
               <NavLink
                 className="nav-link"
