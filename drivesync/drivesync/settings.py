@@ -42,8 +42,6 @@ INSTALLED_APPS = [
     'django.conf',
     # Custom apps
     'company_dashboard.apps.CompanyDashboardConfig',
-    'userauth.apps.UserauthConfig',
-    #'addon.apps.AddonConfig',
     'user_dashboard.apps.UserDashboardConfig',
     'api.apps.ApiConfig',
     #external libraries
