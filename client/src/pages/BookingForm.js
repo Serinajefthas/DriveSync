@@ -2,6 +2,7 @@ import "../styles/BookingForm.css";
 import DatetimePickerInput from "../components/DatetimePickerInput";
 import ClientInfo from "../components/ClientInfo";
 import { useState } from "react";
+import CarDetails from "../components/CarDetails";
 
 function BookingForm() {
   const [formData, setFormData] = useState({
@@ -11,9 +12,23 @@ function BookingForm() {
     birthday: "",
     country: "",
     additionalOptions: "",
-    pickupDate: new Date(),
-    returnDate: new Date(new Date().getTime() + 24 * 60 * 60 * 1000),
+    pickupDate: formatDate(new Date()),
+    returnDate: formatDate(
+      new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+    ),
   });
+
+  function formatDate(date) {
+    return date
+      .toLocaleString("en-GB", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      })
+      .replace(",", " at");
+  }
 
   const handleInputChange = (fieldName, event) => {
     const value = event.target.value;
@@ -29,8 +44,8 @@ function BookingForm() {
     }
     setFormData((prevFormData) => ({
       ...prevFormData,
-      pickupDate,
-      returnDate,
+      pickupDate: formatDate(pickupDate),
+      returnDate: formatDate(returnDate),
     }));
   };
 
@@ -44,22 +59,28 @@ function BookingForm() {
       <div className="container">
         <h2>Booking Form</h2>
         <form onSubmit={handleSubmit}>
-          {/* Client Information */}
-          <div className="driver">
-            <ClientInfo onChange={handleInputChange} />
+          <div className="form-info">
+            {/* Client Information */}
+            <div className="driver">
+              <ClientInfo onChange={handleInputChange} />
 
-            {/* Datetime Picker */}
-            <DatetimePickerInput onDatetimeChange={handleDatetimeChange} />
-          </div>
+              {/* Datetime Picker */}
+              <DatetimePickerInput onDatetimeChange={handleDatetimeChange} />
+            </div>
 
-          {/* Car Details Card */}
-          <div>
-            <h3>Car Details</h3>
-            {/* Display car details, total price, or any other relevant information */}
+            {/* Car Details Card */}
+            <div className="car-details">
+              <CarDetails
+                pickupDate={formData.pickupDate}
+                returnDate={formData.returnDate}
+              />
+            </div>
           </div>
 
           {/* Submit Button */}
-          <button type="submit">Submit</button>
+          <button className="btn-submit" type="submit">
+            Book
+          </button>
         </form>
       </div>
     </section>

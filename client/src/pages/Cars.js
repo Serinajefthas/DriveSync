@@ -5,7 +5,6 @@ import "../styles/Cars.css";
 import carsData from "../cars.json";
 
 function Cars() {
-  // const API_URL = "../cars.json";
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
