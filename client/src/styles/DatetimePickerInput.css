@@ -1,0 +1,11 @@
+/* DatetimePickerInput.css */
+.my-datetime-picker .react-datetime-picker__clear-button {
+  display: none;
+}
+.my-datetime-picker .react-datetime-picker__wrapper {
+  padding: 5px;
+  border-radius: 10px;
+}
+.my-datetime-picker .react-datetime-picker__clock {
+  display: none;
+}
