@@ -3,15 +3,27 @@ function ClientInfo({ onChange }) {
     <div className="client-info">
       <label>
         Name:
-        <input type="text" onChange={(value) => onChange("name", value)} />
+        <input
+          type="text"
+          onChange={(value) => onChange("name", value)}
+          required
+        />
       </label>
       <label>
         Last Name:
-        <input type="text" onChange={(value) => onChange("lastName", value)} />
+        <input
+          type="text"
+          onChange={(value) => onChange("lastName", value)}
+          required
+        />
       </label>
       <label>
         Email:
-        <input type="email" onChange={(value) => onChange("email", value)} />
+        <input
+          type="email"
+          onChange={(value) => onChange("email", value)}
+          required
+        />
       </label>
       <label>
         Phone:
@@ -19,11 +31,15 @@ function ClientInfo({ onChange }) {
       </label>
       <label>
         Birthday:
-        <input type="date" onChange={(value) => onChange("birthday", value)} />
+        <input
+          type="date"
+          onChange={(value) => onChange("birthday", value)}
+          required
+        />
       </label>
       <label>
         Country:
-        <select onChange={(value) => onChange("country", value)}>
+        <select onChange={(value) => onChange("country", value)} required>
           <option value="AF">Afghanistan</option>
 
           <option value="ZA">Afrique du Sud</option>

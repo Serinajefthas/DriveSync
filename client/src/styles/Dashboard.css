@@ -1,0 +1,16 @@
+.dashboard {
+  padding: 0px;
+  background-color: #eee;
+}
+.dashboard .admin {
+  background-color: #f8f9fa;
+  padding: 25px 10px;
+  text-align: end;
+}
+.dashboard .admin h2 {
+  margin: 0 20px 0;
+}
+
+.dashboard div:nth-child(2) {
+  padding: 25px 10px;
+}

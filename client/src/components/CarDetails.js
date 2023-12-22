@@ -33,12 +33,10 @@ function CarDetails({
     setCar(carById);
   }, [carId]);
 
-  // Calculate the total number of rental days
   const totalDays = Math.ceil(
     (returnDate - pickupDate) / (1000 * 60 * 60 * 24)
   );
 
-  // Calculate the total price
   const totalPrice = totalDays * car.rent_per_day;
 
   return (
