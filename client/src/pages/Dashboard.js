@@ -3,6 +3,7 @@ import Sidebar from "../components/Sidebar";
 import "../styles/Dashboard.css";
 import DashboardWelcome from "../components/DashboardWelcome";
 import ManageFleet from "../components/ManageFleet";
+import AddCar from "./AddCar";
 
 function Dashboard() {
   return (
@@ -18,6 +19,7 @@ function Dashboard() {
           <Routes>
             <Route path="/" element={<DashboardWelcome />} index />
             <Route path="/manage-fleet" element={<ManageFleet />} />
+            <Route path="/manage-fleet/add-car" element={<AddCar />} />
             {/* <Route path="/reservations" element={<ReservationInfo />} />
         <Route path="/settings" element={<AccountSettings />} /> */}
           </Routes>
