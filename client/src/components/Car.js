@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 function Car(props) {
   const {
-    id,
+    _id,
     image,
     name,
     model,
+    year,
     rent_per_day,
     specifications: {
       number_of_doors,
@@ -17,15 +18,17 @@ function Car(props) {
     },
   } = props.car;
   const { dashboard } = props;
+
+  const imgUrl = `http://localhost:4000/assets/cars/${image}`;
   return (
     <div className="car">
       <div className="car-image">
-        <img src={toyota} alt="car" />
+        <img src={imgUrl} alt="car" />
       </div>
       <div className="car-details">
         <div className="car-title">
-          <h3>{name}</h3>
-          <p>{model}</p>
+          <h3>{name + " " + model}</h3>
+          <p>{year}</p>
         </div>
         <div className="car-features">
           <div className="car-feature">
@@ -59,7 +62,7 @@ function Car(props) {
             <strong>${rent_per_day}</strong> / day
           </p>
           {!dashboard && (
-            <Link to={"bookingform/" + id} className="btn btn-primary">
+            <Link to={"bookingform/" + _id} className="btn btn-primary">
               Book Now
             </Link>
           )}
