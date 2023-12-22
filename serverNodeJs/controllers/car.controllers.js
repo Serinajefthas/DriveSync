@@ -26,13 +26,10 @@ const addCar = async (req, res) => {
   try {
     const { name, model, year, rent_per_day, specifications } = req.body;
 
-    const parsedSpecifications = JSON.parse(specifications);
-
     const { number_of_doors, number_of_people, transmission, number_of_bags } =
-      parsedSpecifications;
+      specifications;
 
     const image = req.file.filename;
-    console.log(image);
 
     const newCar = new Car({
       name,
@@ -86,4 +83,5 @@ const updateCar = async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
+
 module.exports = { addCar, getAllCars, getCarById, updateCar };
