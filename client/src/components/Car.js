@@ -16,6 +16,7 @@ function Car(props) {
       number_of_bags,
     },
   } = props.car;
+  const { dashboard } = props;
   return (
     <div className="car">
       <div className="car-image">
@@ -57,9 +58,11 @@ function Car(props) {
           <p className="price">
             <strong>${rent_per_day}</strong> / day
           </p>
-          <Link to={"bookingform/" + id} className="btn btn-primary">
-            Book Now
-          </Link>
+          {!dashboard && (
+            <Link to={"bookingform/" + id} className="btn btn-primary">
+              Book Now
+            </Link>
+          )}
         </div>
       </div>
     </div>

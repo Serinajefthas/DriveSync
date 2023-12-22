@@ -4,7 +4,7 @@ import "../styles/Cars.css";
 
 import carsData from "../cars.json";
 
-function Cars() {
+function Cars({ dashboard }) {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ function Cars() {
       <div className="container">
         <div className="cars-list">
           {cars.map((car) => (
-            <Car key={car.id} car={car} />
+            <Car key={car.id} car={car} dashboard={dashboard} />
           ))}
         </div>
       </div>
