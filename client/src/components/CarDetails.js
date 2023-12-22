@@ -26,12 +26,15 @@ function CarDetails({
   }
 
   useEffect(() => {
-    if (carId > carsData.length) {
-      return;
-    }
-    const carById = carsData.find((car) => car.id === +carId);
-    setCar(carById);
+    fetch(`http://localhost:4000/api/cars/${carId}`)
+      .then((response) => response.json())
+      .then((data) => setCar(data))
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }, [carId]);
+
+  const imgUrl = `http://localhost:4000/assets/cars/${car.image}`;
 
   const totalDays = Math.ceil(
     (returnDate - pickupDate) / (1000 * 60 * 60 * 24)
@@ -44,7 +47,7 @@ function CarDetails({
       <h3>Reservation Information</h3>
       <div className="car-data">
         <h4>
-          {car.name} {car.model} <span> or similar</span>
+          {car.name + " " + car.model} {car.year} <span> or similar</span>
         </h4>
         <p>From {formatDate(initialPickupDate)}</p>
         <p>To {formatDate(initialReturnDate)}</p>
@@ -52,7 +55,7 @@ function CarDetails({
           Number of days: <span>{totalDays}</span>
         </p>
         <div className="img-container">
-          <img src={toyotaCamry} alt="car" />
+          <img src={imgUrl} alt="car" />
         </div>
         <div className="total-price">
           <p>Total Price:</p>

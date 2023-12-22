@@ -28,3 +28,39 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+// <!-- Your HTML form -->
+// <form action="/upload" method="post" enctype="multipart/form-data">
+//   <!-- Input fields for car details -->
+//   <label for="name">Name:</label>
+//   <input type="text" name="name" required>
+
+//   <label for="model">Model:</label>
+//   <input type="text" name="model" required>
+
+//   <label for="year">Year:</label>
+//   <input type="number" name="year" required>
+
+//   <label for="rent_per_day">Rent per Day:</label>
+//   <input type="number" name="rent_per_day" required>
+
+//   <!-- Input fields for specifications -->
+//   <label for="number_of_doors">Number of Doors:</label>
+//   <input type="number" name="number_of_doors" required>
+
+//   <label for="number_of_people">Number of People:</label>
+//   <input type="number" name="number_of_people" required>
+
+//   <label for="transmission">Transmission:</label>
+//   <input type="text" name="transmission" required>
+
+//   <label for="number_of_bags">Number of Bags:</label>
+//   <input type="number" name="number_of_bags" required>
+
+//   <!-- Input field for image upload -->
+//   <label for="image">Upload Image:</label>
+//   <input type="file" name="image" accept="image/*" required>
+
+//   <!-- Submit button -->
+//   <button type="submit">Submit</button>
+// </form>
