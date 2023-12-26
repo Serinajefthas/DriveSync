@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
-import DateTimePicker from "react-datetime-picker";
+import React, { useState } from "react";
+import DateTimePickerComponent from "react-datetime-picker";
 
 const DatetimePicker = ({ format, minDate, step, onChange }) => {
   const [value, setValue] = useState(new Date());
-
-  // useEffect(() => {
-  //   console.log(value);
-  // }, [value]);
 
   const handleChange = (date) => {
     setValue(date);
@@ -14,7 +10,7 @@ const DatetimePicker = ({ format, minDate, step, onChange }) => {
   };
 
   return (
-    <DateTimePicker
+    <DateTimePickerComponent
       format={format}
       minDate={minDate}
       step={step}
