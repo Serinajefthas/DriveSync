@@ -1,11 +1,14 @@
 import "../styles/Car.css";
 import toyota from "../assets/images/toyotaCamry.png";
+import { Link } from "react-router-dom";
 
 function Car(props) {
   const {
+    _id,
     image,
     name,
     model,
+    year,
     rent_per_day,
     specifications: {
       number_of_doors,
@@ -14,15 +17,18 @@ function Car(props) {
       number_of_bags,
     },
   } = props.car;
+  const { dashboard } = props;
+
+  const imgUrl = `http://localhost:4000/assets/cars/${image}`;
   return (
     <div className="car">
       <div className="car-image">
-        <img src={toyota} alt="car" />
+        <img src={imgUrl} alt="car" />
       </div>
       <div className="car-details">
         <div className="car-title">
-          <h3>{name}</h3>
-          <p>{model}</p>
+          <h3>{name + " " + model}</h3>
+          <p>{year}</p>
         </div>
         <div className="car-features">
           <div className="car-feature">
@@ -55,7 +61,11 @@ function Car(props) {
           <p className="price">
             <strong>${rent_per_day}</strong> / day
           </p>
-          <button className="btn btn-primary">Book Now</button>
+          {!dashboard && (
+            <Link to={"bookingform/" + _id} className="btn btn-primary">
+              Book Now
+            </Link>
+          )}
         </div>
       </div>
     </div>

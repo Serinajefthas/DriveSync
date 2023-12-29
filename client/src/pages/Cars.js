@@ -2,21 +2,25 @@ import { useState, useEffect } from "react";
 import Car from "../components/Car";
 import "../styles/Cars.css";
 
-import carsData from "../cars.json";
+// import carsData from "../cars.json";
 
-function Cars() {
-  // const API_URL = "../cars.json";
+function Cars({ dashboard }) {
   const [cars, setCars] = useState([]);
 
   useEffect(() => {
-    setCars(carsData);
+    fetch("http://localhost:4000/api/cars")
+      .then((response) => response.json())
+      .then((data) => setCars(data))
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }, []);
   return (
     <section className="cars">
       <div className="container">
         <div className="cars-list">
           {cars.map((car) => (
-            <Car key={car.id} car={car} />
+            <Car key={car._id} car={car} dashboard={dashboard} />
           ))}
         </div>
       </div>
