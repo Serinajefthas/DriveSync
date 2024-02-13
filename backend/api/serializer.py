@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import *
 
+# converts django data types into python types easily converted json format
 class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Car
