@@ -14,11 +14,11 @@
 
 ## Introduction
 
-Welcome to DriveSync, a comprehensive car rental management system designed and developed as part of the ALX research project. This system is aimed at streamlining and optimizing the car rental process for both the rental company and its clients. DiveSync is created by a talented team of developers, including Graham Paul, Serina Jefthas, and Oussama Hamdi.
+Welcome to DriveSync, a comprehensive car rental management system designed and developed as part of the ALX research project. This system is aimed at streamlining and optimizing the car rental process for both the rental company and its clients. DriveSync is created by a talented team of developers, including Graham Paul, Serina Jefthas, and Oussama Hamdi.
 
 ## Project Overview
 
-The ALX research project focuses on advancing technology solutions in the automotive industry. DiveSync, as a part of this initiative, aims to provide an efficient and user-friendly platform for managing the rental process. This system addresses the needs of both the rental company staff and the clients, offering a seamless experience from reservation to vehicle return.
+The ALX research project focuses on advancing technology solutions in the automotive industry. DriveSync, as a part of this initiative, aims to provide an efficient and user-friendly platform for managing the rental process. This system addresses the needs of both the rental company staff and the clients, offering a seamless experience from reservation to vehicle return.
 
 ## Features
 
@@ -31,7 +31,7 @@ The ALX research project focuses on advancing technology solutions in the automo
 
 - **Real-time Fleet Management**: The system provides a centralized dashboard for the rental company to monitor and manage the entire fleet in real-time.
 - **Reservation Handling**: Staff can efficiently process and manage reservations, including vehicle availability, pick-up, and return scheduling.
-- **Inventory Management**: DiveSync facilitates easy tracking and management of the company's vehicle inventory, ensuring accurate records and maintenance tracking.
+- **Inventory Management**: DriveSync facilitates easy tracking and management of the company's vehicle inventory, ensuring accurate records and maintenance tracking.
 
 ### Client Interface
 
@@ -41,10 +41,10 @@ The ALX research project focuses on advancing technology solutions in the automo
 
 ## Installation
 
-To install DiveSync, follow these steps:
+To install DriveSync, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Oussama-hamdi/DriveSync.git`
-2. Navigate to the project directory: `cd DiveSync`
+2. Navigate to the project directory: `cd DriveSync`
 3. Install dependencies: `npm install`
 4. Configure the database settings in the `.env` file.
 5. Run the application: `npm start`
@@ -56,7 +56,7 @@ To install DiveSync, follow these steps:
 3. Navigate through the company dashboard for fleet management.
 4. Process reservations, manage inventory, and monitor system analytics.
 5. Clients can access the platform, create accounts, and make reservations.
-6. Enjoy the streamlined car rental experience with DiveSync.
+6. Enjoy the streamlined car rental experience with DriveSync.
 
 ## Contributors
 
