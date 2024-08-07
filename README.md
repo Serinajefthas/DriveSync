@@ -1,4 +1,4 @@
-# DiveSync: Car Rental Management System
+# DriveSync: Car Rental Management System
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Welcome to DiveSync, a comprehensive car rental management system designed and developed as part of the ALX research project. This system is aimed at streamlining and optimizing the car rental process for both the rental company and its clients. DiveSync is created by a talented team of developers, including Graham Paul, Serina Jefthas, and Oussama Hamdi.
+Welcome to DriveSync, a comprehensive car rental management system designed and developed as part of the ALX research project. This system is aimed at streamlining and optimizing the car rental process for both the rental company and its clients. DiveSync is created by a talented team of developers, including Graham Paul, Serina Jefthas, and Oussama Hamdi.
 
 ## Project Overview
 
